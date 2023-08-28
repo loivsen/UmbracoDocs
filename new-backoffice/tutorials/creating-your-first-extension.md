@@ -142,7 +142,11 @@ Now go into the newly created `my-package` and install the dependencies:
 npm install
 ```
 
-If you see any errors during this process, make sure that you have the right tools installed (Node, .NET and so on) make sure you have followed the steps on how to [Setup Your Development Environment](../extending/development-flow.md).
+{% hint style="warning" %}
+If you run into any errors, follow these steps: 
+- Make sure that you have the right tools installed (Node, .NET and so on).
+- Make sure you have followed the steps on how to [Setup Your Development Environment](../extending/development-flow.md).
+{% endhint %}
 
 Next, create a new file called `vite.config.ts` and insert the following code:
 
@@ -163,6 +167,7 @@ export default defineConfig({
   },
 });
 ```
+
 
 This alters the Vite default output into a "library mode", where the output is a javascript file with the same name from package.json.
 
